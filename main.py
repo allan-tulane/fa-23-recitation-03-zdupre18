@@ -18,6 +18,11 @@ class BinaryNumber:
 ## ensure that x, y are appropriately sized binary vectors for a
 ## divide and conquer approach.
 
+def quadratic_multiply(x, y):
+    # this just converts the result from a BinaryNumber to a regular int
+    return _quadratic_multiply(x,y).decimal_val
+
+
 def binary2int(binary_vec): 
     if len(binary_vec) == 0:
         return BinaryNumber(0)
