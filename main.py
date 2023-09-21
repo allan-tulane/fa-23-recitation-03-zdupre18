@@ -55,6 +55,25 @@ def quadratic_multiply(x, y):
 
 def _quadratic_multiply(x, y):
     ### TODO
+    xvec = x.binary_vec
+    yvec = y.binary_vec
+    if len(xvec) != len(yvec):
+        pad(x,y)
+    if x <=1 and y6 <= 1:
+        return x * y
+    else:
+        x_left = split_number(xvec)[0]
+        x_right = split_number(yvec)[1]
+        y_left = split_number(yvec)[0]
+        y_right = split_number(yvec)[1]
+
+        product1 = _quadratic_multiply(x_left, y_left)
+        product 2 = _quadratic_multiply(x_right, y_right)
+        product3 = _quadratic_multiply(x_left, y_right)
+        product 4 = _quadratic_multiply(x_right, y_left)
+
+    exponent1 = bit_shift(BinaryNumber(2),n).decimal_val
+    exponent2n = bit_shift(BinaryNumber(2), n/2.decimal_val
     pass
     ###
 
