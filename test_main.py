@@ -13,7 +13,15 @@ def test_multiply():
     assert quadratic_multiply(BinaryNumber(11), BinaryNumber(5)) == 11*5
 
 def test_additon():
-    
+
+        assert Equal(addition(3, 5), 8)  # 3 + 5 should equal 8
+
+        assert Equal(addition(-3, -5), -8)  # -3 + (-5) should equal -8
+
+        assert Equal(addition(7, -2), 5)  # 7 + (-2) should equal 5
+
+        assert Equal(addition(0, 10), 10)  # 0 + 10 should equal 10
+
     
 
     
